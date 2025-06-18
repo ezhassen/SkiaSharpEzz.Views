@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+
+		<UseWPF>true</UseWPF>
+		<RootNamespace>SkiaSharpEzz.Views.WPF</RootNamespace>
+		<AssemblyName>SkiaSharpEzz.Views.WPF</AssemblyName>
+
+		<PackageId>SkiaSharpEzz.Views.WPF</PackageId>
+		<Description>To be used without dependency issues. (Uses SkiaSharp latest version)</Description>
+		<Authors>ezhassen</Authors>
+		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
+		<PackageIconUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</PackageIconUrl>
+		<Version>3.119.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SkiaSharp" Version="3.119.0" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="3.119.0" />
+	</ItemGroup>
+</Project>

@@ -8,8 +8,6 @@
 		<UseWindowsForms>true</UseWindowsForms>
 		<RootNamespace>SkiaSharpEzz.Views.Desktop</RootNamespace>
 		<AssemblyName>SkiaSharpEzz.Views.WindowsForms</AssemblyName>
-		<!--<PackagingGroup>SkiaSharp.Views.WindowsForms</PackagingGroup>-->
-		<!--<DefineConstants>$(DefineConstants);__DESKTOP__;__WINFORMS__</DefineConstants>-->
 
 		<PackageId>SkiaSharpEzz.Views.WindowsFormsV2</PackageId>
 		<Description>To be used in .net9.0-windows without dependency issues. (Uses SkiaSharp v2)</Description>
