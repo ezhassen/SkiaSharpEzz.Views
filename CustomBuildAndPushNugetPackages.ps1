@@ -4,6 +4,8 @@ $projectNamesAndDllNames = @{
     "SkiaSharpEzz.Views.WindowsFormsV2" = "SkiaSharpEzz.Views.WindowsForms"
     "SkiaSharpEzz.Views.WPF"            = "SkiaSharpEzz.Views.WPF"
     "SkiaSharpEzz.Views.WPFv2"          = "SkiaSharpEzz.Views.WPF"
+    "SkiaSharpEzz.Views.WPFGL"          = "SkiaSharpEzz.Views.WPFGL"
+    "SkiaSharpEzz.Views.WPFGLv2"          = "SkiaSharpEzz.Views.WPFGL"
 }
 
 
