@@ -6,10 +6,10 @@
 		<Nullable>disable</Nullable>
 
 		<UseWPF>true</UseWPF>
-		<RootNamespace>SkiaSharpEzz.Views.WPF</RootNamespace>
-		<AssemblyName>SkiaSharpEzz.Views.WPF</AssemblyName>
+		<RootNamespace>SkiaSharpEzz.Views.WPFGL</RootNamespace>
+		<AssemblyName>SkiaSharpEzz.Views.WPFGL</AssemblyName>
 
-		<PackageId>SkiaSharpEzz.Views.WPFv2</PackageId>
+		<PackageId>SkiaSharpEzz.Views.WPFGLv2</PackageId>
 		<Description>To be used without dependency issues. (Uses SkiaSharp v2)</Description>
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
@@ -17,13 +17,16 @@
 		<Version>2.88.9</Version>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Compile Include="..\SkiaSharpEzz.Views.WPF\SKElement.cs" Link="SKElement.cs" />
-	  <Compile Include="..\SkiaSharpEzz.Views.WPF\WPFExtensions.cs" Link="WPFExtensions.cs" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="SkiaSharp" Version="2.88.9" />
 		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.9" />
+		<PackageReference Include="OpenTKEzz.GLWpfControl" Version="4.3.4" />
 	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="..\SkiaSharpEzz.Views.WPF\WPFExtensions.cs" Link="WPFExtensions.cs" />
+		<Compile Include="..\SkiaSharpEzz.Views.WPFGL\SKGLElement.cs" Link="SKGLElement.cs" />
+	</ItemGroup>
+
 </Project>

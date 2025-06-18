@@ -10,7 +10,7 @@ namespace SkiaSharpEzz.Views.WPF
 {
     [DefaultEvent("PaintSurface")]
     [DefaultProperty("Name")]
-    public class SKElementEzz : FrameworkElement
+    public class SKElement : FrameworkElement
     {
         private const double BitmapDpi = 96.0;
 
@@ -19,7 +19,7 @@ namespace SkiaSharpEzz.Views.WPF
         private WriteableBitmap bitmap;
         private bool ignorePixelScaling;
 
-        public SKElementEzz()
+        public SKElement()
         {
             designMode = DesignerProperties.GetIsInDesignMode(this);
         }

@@ -9,7 +9,7 @@ namespace SkiaSharpEzz.Views.Desktop
 {
     [DefaultEvent("PaintSurface")]
     [DefaultProperty("Name")]
-    public class SKGLControlEzz : GLControl
+    public class SKGLControl : GLControl
     {
         private const SKColorType colorType = SKColorType.Rgba8888;
         private const GRSurfaceOrigin surfaceOrigin = GRSurfaceOrigin.BottomLeft;
@@ -24,13 +24,13 @@ namespace SkiaSharpEzz.Views.Desktop
 
         private SKSizeI lastSize;
 
-        public SKGLControlEzz(SupportedGLBindings selectedGLBindings = SupportedGLBindings.ES20) : base()
+        public SKGLControl(SupportedGLBindings selectedGLBindings = SupportedGLBindings.ES20) : base()
         {
             Initialize();
             SelectedGLBindings = selectedGLBindings;
         }
 
-        public SKGLControlEzz(GLControlSettings gLControlSettings, SupportedGLBindings selectedGLBindings = SupportedGLBindings.ES20) : base(gLControlSettings)
+        public SKGLControl(GLControlSettings gLControlSettings, SupportedGLBindings selectedGLBindings = SupportedGLBindings.ES20) : base(gLControlSettings)
         {
             Initialize();
             SelectedGLBindings = selectedGLBindings;

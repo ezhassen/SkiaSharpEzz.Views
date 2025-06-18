@@ -10,15 +10,15 @@ namespace SkiaSharpEzz.Views.Desktop
 {
 	[DefaultEvent("PaintSurface")]
 	[DefaultProperty("Name")]
-	public class SKControlEzz : Control
+	public class SKControl : Control
 	{
 		private readonly bool designMode;
 
 		private Bitmap bitmap;
 
-		public SKControlEzz()
+		public SKControl()
 		{
-			DoubleBuffered = true;
+            DoubleBuffered = true;
 			SetStyle(ControlStyles.ResizeRedraw, true);
 
 			designMode = DesignMode || LicenseManager.UsageMode == LicenseUsageMode.Designtime;
