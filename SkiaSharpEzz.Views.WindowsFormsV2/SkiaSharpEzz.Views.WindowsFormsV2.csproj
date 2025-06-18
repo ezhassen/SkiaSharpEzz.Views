@@ -18,6 +18,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\Extensions.cs" Link="Extensions.cs" />
 		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\SKControl.cs" Link="SKControl.cs" />
 		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\SKGLControl.cs" Link="SKGLControl.cs" />
 		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\SupportedGLBindings.cs" Link="SupportedGLBindings.cs" />
