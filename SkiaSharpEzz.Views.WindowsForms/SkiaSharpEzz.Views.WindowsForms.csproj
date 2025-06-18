@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+
+		<UseWindowsForms>true</UseWindowsForms>
+		<RootNamespace>SkiaSharpEzz.Views.Desktop</RootNamespace>
+		<AssemblyName>SkiaSharpEzz.Views.WindowsForms</AssemblyName>
+		<!--<PackagingGroup>SkiaSharp.Views.WindowsForms</PackagingGroup>-->
+		<!--<DefineConstants>$(DefineConstants);__DESKTOP__;__WINFORMS__</DefineConstants>-->
+
+		<PackageId>SkiaSharpEzz.Views.WindowsForms</PackageId>
+		<Description>To be used in .net9.0-windows without dependency issues. (Uses SkiaSharp latest version)</Description>
+		<Authors>ezhassen</Authors>
+		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
+		<PackageIconUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</PackageIconUrl>
+		<Version>3.119.2</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!--OpenTK Not needed here-->
+		<!--<PackageReference Include="OpenTK" Version="3.1.0" NoWarn="NU1701" />-->
+		<!--<PackageReference Include="OpenTKEzz.Windowing.Desktop" Version="4.9.8" NoWarn="NU1701" />
+		<PackageReference Include="OpenTKEzz.Windowing.GraphicsLibraryFramework" Version="4.9.8" NoWarn="NU1701" />
+		<PackageReference Include="OpenTKEzz.Graphics" Version="4.9.8" NoWarn="NU1701" />
+		<PackageReference Include="OpenTKEzz.Core" Version="4.9.8" NoWarn="NU1701" />
+		<PackageReference Include="OpenTKEzz.Mathematics" Version="4.9.8" NoWarn="NU1701" />
+		<PackageReference Include="OpenTKEzz.Windowing.Common" Version="4.9.8" NoWarn="NU1701" />-->
+
+		<PackageReference Include="OpenTKEzz.GLControl" Version="4.0.5" NoWarn="NU1701" />
+
+		<!--<PackageReference Include="SkiaSharp" Version="2.88.9" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.9" />-->
+
+		<PackageReference Include="SkiaSharp" Version="3.119.0" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="3.119.0" />
+	</ItemGroup>
+</Project>
