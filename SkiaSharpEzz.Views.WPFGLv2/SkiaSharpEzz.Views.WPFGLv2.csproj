@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</TargetFrameworks>
+		<TargetFrameworks>$(SupportedTargetFrameworks)</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 
@@ -10,22 +10,25 @@
 		<AssemblyName>SkiaSharpEzz.Views.WPFGL</AssemblyName>
 
 		<PackageId>SkiaSharpEzz.Views.WPFGLv2</PackageId>
-		<Description>To be used without dependency issues. (Uses SkiaSharp v2)</Description>
+		<Description>
+			To be used without dependency issues.
+			Uses custom build OpenTKEzz.GLWpfControl and SkiaSharp v2.
+			To use native only get SkiaSharpEzz.Views.WPFv2
+		</Description>
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
 		<PackageIconUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</PackageIconUrl>
-		<Version>2.88.10</Version>
+		<Version>$(V2Version)</Version>
 	</PropertyGroup>
 
-
 	<ItemGroup>
-		<PackageReference Include="SkiaSharp" Version="2.88.9" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.9" />
-		<PackageReference Include="OpenTKEzz.GLWpfControl" Version="4.3.4" />
+		<PackageReference Include="SkiaSharp" Version="$(SkiaSharpV2Version)" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="$(SkiaSharpV2Version)" />
+		<PackageReference Include="OpenTKEzz.GLWpfControl" Version="$(GLWpfControlVersion)" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include="..\SkiaSharpEzz.Views.WPF\WPFExtensions.cs" Link="WPFExtensions.cs" />
+		<Compile Include="..\SkiaSharpEzz.Views.WPFGL\WPFExtensionsGL.cs" Link="WPFExtensionsGL.cs" />
 		<Compile Include="..\SkiaSharpEzz.Views.WPFGL\SKGLElement.cs" Link="SKGLElement.cs" />
 	</ItemGroup>
 

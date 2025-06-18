@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</TargetFrameworks>
+		<TargetFrameworks>$(SupportedTargetFrameworks)</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 
@@ -10,11 +10,17 @@
 		<AssemblyName>SkiaSharpEzz.Views.WPF</AssemblyName>
 
 		<PackageId>SkiaSharpEzz.Views.WPFv2</PackageId>
-		<Description>To be used without dependency issues. (Uses SkiaSharp v2)</Description>
+		
+		<Description>
+			To be used without dependency issues.
+			Uses native rendering only and SkiaSharp v2.
+			To use GL get SkiaSharpEzz.Views.WPFGLv2
+		</Description>
+		
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
 		<PackageIconUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</PackageIconUrl>
-		<Version>2.88.10</Version>
+		<Version>$(V2Version)</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -23,7 +29,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SkiaSharp" Version="2.88.9" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.9" />
+		<!--OpenTK and GLWpfControl Not needed here as this using native rendering-->
+		<PackageReference Include="SkiaSharp" Version="$(SkiaSharpV2Version)" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="$(SkiaSharpV2Version)" />
 	</ItemGroup>
 </Project>

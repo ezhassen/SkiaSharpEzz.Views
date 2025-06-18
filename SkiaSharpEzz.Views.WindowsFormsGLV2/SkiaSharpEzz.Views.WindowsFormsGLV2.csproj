@@ -7,13 +7,14 @@
 
 		<UseWindowsForms>true</UseWindowsForms>
 		<RootNamespace>SkiaSharpEzz.Views.Desktop</RootNamespace>
-		<AssemblyName>SkiaSharpEzz.Views.WindowsForms</AssemblyName>
+		<AssemblyName>SkiaSharpEzz.Views.WindowsFormsGL</AssemblyName>
 
-		<PackageId>SkiaSharpEzz.Views.WindowsFormsV2</PackageId>
+		<PackageId>SkiaSharpEzz.Views.WindowsFormsGLV2</PackageId>
+
 		<Description>
 			To be used without dependency issues.
-			Uses native rendering only and SkiaSharp v2.
-			To use GL get SkiaSharpEzz.Views.WindowsFormsGLV2
+			Uses custom build OpenTKEzz.GLControl and SkiaSharp v2.
+			To use native only get SkiaSharpEzz.Views.WindowsFormsV2
 		</Description>
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
@@ -22,11 +23,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\Extensions.cs" Link="Extensions.cs" />
-		<Compile Include="..\SkiaSharpEzz.Views.WindowsForms\SKControl.cs" Link="SKControl.cs" />
+		<Compile Include="..\SkiaSharpEzz.Views.WindowsFormsGL\SKGLControl.cs" Link="SKGLControl.cs" />
+		<Compile Include="..\SkiaSharpEzz.Views.WindowsFormsGL\ExtensionsGL.cs" Link="ExtensionsGL.cs" />
+		<Compile Include="..\SkiaSharpEzz.Views.WindowsFormsGL\SupportedGLBindings.cs" Link="SupportedGLBindings.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<!--OpenTK and GLControl Not needed here as this using native rendering-->
+		<!--Full OpenTK Not needed here-->
+		<!--<PackageReference Include="OpenTK" Version="3.1.0" NoWarn="NU1701" />-->
+
+		<PackageReference Include="OpenTKEzz.GLControl" Version="$(GLControlVersion)" NoWarn="NU1701" />
 		<PackageReference Include="SkiaSharp" Version="$(SkiaSharpV2Version)" />
 		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="$(SkiaSharpV2Version)" />
 	</ItemGroup>

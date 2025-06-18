@@ -1,0 +1,18 @@
+<Project>
+
+	<PropertyGroup>
+		<SupportedTargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</SupportedTargetFrameworks>
+
+		<SkiaSharpV2Version>2.88.9</SkiaSharpV2Version>
+		<LatestSkiaSharpVersion>3.119.0</LatestSkiaSharpVersion>
+
+		<GLControlVersion>4.0.5</GLControlVersion>
+		<GLWpfControlVersion>4.3.4</GLWpfControlVersion>
+
+		<NormalVersion>3.119.2</NormalVersion>
+		<V2Version>2.88.12</V2Version>
+
+	
+</PropertyGroup>
+
+</Project>

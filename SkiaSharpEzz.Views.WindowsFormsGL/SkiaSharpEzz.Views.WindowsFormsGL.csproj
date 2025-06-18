@@ -5,16 +5,15 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 
-		<UseWPF>true</UseWPF>
-		<RootNamespace>SkiaSharpEzz.Views.WPFGL</RootNamespace>
-		<AssemblyName>SkiaSharpEzz.Views.WPFGL</AssemblyName>
+		<UseWindowsForms>true</UseWindowsForms>
+		<RootNamespace>SkiaSharpEzz.Views.Desktop</RootNamespace>
+		<AssemblyName>SkiaSharpEzz.Views.WindowsFormsGL</AssemblyName>
 
-		<PackageId>SkiaSharpEzz.Views.WPFGL</PackageId>
-
+		<PackageId>SkiaSharpEzz.Views.WindowsFormsGL</PackageId>
 		<Description>
 			To be used without dependency issues.
-			Uses custom build OpenTKEzz.GLWpfControl and SkiaSharp latest version.
-			To use native only get SkiaSharpEzz.Views.WPF
+			Uses custom build OpenTKEzz.GLControl and SkiaSharp latest version.
+			To use native only get SkiaSharpEzz.Views.WindowsForms
 		</Description>
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
@@ -22,11 +21,19 @@
 		<Version>$(NormalVersion)</Version>
 	</PropertyGroup>
 
-
 	<ItemGroup>
+		<!--Full OpenTK Not needed here-->
+		<!--<PackageReference Include="OpenTK" Version="3.1.0" NoWarn="NU1701" />-->
+
+		<PackageReference Include="OpenTKEzz.GLControl" Version="$(GLControlVersion)" NoWarn="NU1701" />
+
 		<PackageReference Include="SkiaSharp" Version="$(LatestSkiaSharpVersion)" />
 		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="$(LatestSkiaSharpVersion)" />
-		<PackageReference Include="OpenTKEzz.GLWpfControl" Version="$(GLWpfControlVersion)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="SKGLControl.cs">
+	    <SubType>Component</SubType>
+	  </Compile>
+	</ItemGroup>
 </Project>

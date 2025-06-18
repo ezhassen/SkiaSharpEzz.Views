@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaSharpEzz.Views.WindowsF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -19,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaSharpEzz.Views.WPFGL", "SkiaSharpEzz.Views.WPFGL\SkiaSharpEzz.Views.WPFGL.csproj", "{8818F822-DDF5-43EC-9BD9-9930383198BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaSharpEzz.Views.WPFGLv2", "SkiaSharpEzz.Views.WPFGLv2\SkiaSharpEzz.Views.WPFGLv2.csproj", "{880CE642-7202-4892-BBA2-F962C34A46F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaSharpEzz.Views.WindowsFormsGL", "SkiaSharpEzz.Views.WindowsFormsGL\SkiaSharpEzz.Views.WindowsFormsGL.csproj", "{18427B50-C2F4-4348-B958-84D0E00100FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkiaSharpV2Projects", "SkiaSharpV2Projects", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaSharpEzz.Views.WindowsFormsGLV2", "SkiaSharpEzz.Views.WindowsFormsGLV2\SkiaSharpEzz.Views.WindowsFormsGLV2.csproj", "{6D0D1D18-B1B7-484C-8F90-40714C7302FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,9 +57,23 @@ Global
 		{880CE642-7202-4892-BBA2-F962C34A46F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880CE642-7202-4892-BBA2-F962C34A46F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880CE642-7202-4892-BBA2-F962C34A46F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18427B50-C2F4-4348-B958-84D0E00100FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18427B50-C2F4-4348-B958-84D0E00100FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18427B50-C2F4-4348-B958-84D0E00100FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18427B50-C2F4-4348-B958-84D0E00100FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0D1D18-B1B7-484C-8F90-40714C7302FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0D1D18-B1B7-484C-8F90-40714C7302FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0D1D18-B1B7-484C-8F90-40714C7302FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0D1D18-B1B7-484C-8F90-40714C7302FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3D795BE-AED8-4C11-BD2C-3D579E42BB02} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2C343D91-844D-4C1B-AFF7-D7CA6A297A9D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{880CE642-7202-4892-BBA2-F962C34A46F9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6D0D1D18-B1B7-484C-8F90-40714C7302FD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BE87728-5C4A-4FC1-86A7-7F543537E731}

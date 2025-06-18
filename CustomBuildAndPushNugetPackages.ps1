@@ -1,11 +1,13 @@
 # projectNames and dll names without extinsons
 $projectNamesAndDllNames = @{
-    "SkiaSharpEzz.Views.WindowsForms"   = "SkiaSharpEzz.Views.WindowsForms"
-    "SkiaSharpEzz.Views.WindowsFormsV2" = "SkiaSharpEzz.Views.WindowsForms"
-    "SkiaSharpEzz.Views.WPF"            = "SkiaSharpEzz.Views.WPF"
-    "SkiaSharpEzz.Views.WPFv2"          = "SkiaSharpEzz.Views.WPF"
-    "SkiaSharpEzz.Views.WPFGL"          = "SkiaSharpEzz.Views.WPFGL"
-    "SkiaSharpEzz.Views.WPFGLv2"          = "SkiaSharpEzz.Views.WPFGL"
+    "SkiaSharpEzz.Views.WindowsForms"     = "SkiaSharpEzz.Views.WindowsForms"
+    "SkiaSharpEzz.Views.WindowsFormsGL"   = "SkiaSharpEzz.Views.WindowsFormsGL" 
+    "SkiaSharpEzz.Views.WindowsFormsV2"   = "SkiaSharpEzz.Views.WindowsForms"	
+    "SkiaSharpEzz.Views.WindowsFormsGLV2" = "SkiaSharpEzz.Views.WindowsFormsGL"
+    "SkiaSharpEzz.Views.WPF"              = "SkiaSharpEzz.Views.WPF"			
+    "SkiaSharpEzz.Views.WPFGL"            = "SkiaSharpEzz.Views.WPFGL"			
+    "SkiaSharpEzz.Views.WPFv2"            = "SkiaSharpEzz.Views.WPF"			
+    "SkiaSharpEzz.Views.WPFGLv2"          = "SkiaSharpEzz.Views.WPFGL"		 
 }
 
 

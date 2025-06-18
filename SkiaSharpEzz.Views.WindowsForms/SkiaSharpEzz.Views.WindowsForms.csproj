@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-windows;net6.0-windows;net8.0-windows;net462</TargetFrameworks>
+		<TargetFrameworks>$(SupportedTargetFrameworks)</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 
@@ -10,29 +10,20 @@
 		<AssemblyName>SkiaSharpEzz.Views.WindowsForms</AssemblyName>
 
 		<PackageId>SkiaSharpEzz.Views.WindowsForms</PackageId>
-		<Description>To be used in .net9.0-windows without dependency issues. (Uses SkiaSharp latest version)</Description>
+		<Description>
+			To be used without dependency issues.
+			Uses native rendering only and SkiaSharp latest version.
+			To use GL get SkiaSharpEzz.Views.WindowsFormsGL
+		</Description>
 		<Authors>ezhassen</Authors>
 		<RepositoryUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</RepositoryUrl>
 		<PackageIconUrl>https://github.com/ezhassen/SkiaSharpEzz.Views</PackageIconUrl>
-		<Version>3.119.1</Version>
+		<Version>$(NormalVersion)</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!--OpenTK Not needed here-->
-		<!--<PackageReference Include="OpenTK" Version="3.1.0" NoWarn="NU1701" />-->
-		<!--<PackageReference Include="OpenTKEzz.Windowing.Desktop" Version="4.9.8" NoWarn="NU1701" />
-		<PackageReference Include="OpenTKEzz.Windowing.GraphicsLibraryFramework" Version="4.9.8" NoWarn="NU1701" />
-		<PackageReference Include="OpenTKEzz.Graphics" Version="4.9.8" NoWarn="NU1701" />
-		<PackageReference Include="OpenTKEzz.Core" Version="4.9.8" NoWarn="NU1701" />
-		<PackageReference Include="OpenTKEzz.Mathematics" Version="4.9.8" NoWarn="NU1701" />
-		<PackageReference Include="OpenTKEzz.Windowing.Common" Version="4.9.8" NoWarn="NU1701" />-->
-
-		<PackageReference Include="OpenTKEzz.GLControl" Version="4.0.5" NoWarn="NU1701" />
-
-		<!--<PackageReference Include="SkiaSharp" Version="2.88.9" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.9" />-->
-
-		<PackageReference Include="SkiaSharp" Version="3.119.0" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="3.119.0" />
+		<!--OpenTK and GLControl Not needed here as this using native rendering-->
+		<PackageReference Include="SkiaSharp" Version="$(LatestSkiaSharpVersion)" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="$(LatestSkiaSharpVersion)" />
 	</ItemGroup>
 </Project>
